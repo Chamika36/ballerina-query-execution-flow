@@ -1,5 +1,3 @@
-# Code Review - Java Runtime for Query Expressions
-
 ## 1. Introduction
 
 This task focuses on improving Ballerina query expressions by leveraging Java streams. Currently, Ballerina query expressions are translated (desugared) into a series of Ballerina objects that work together in a pipeline. However, with this improvement we aim to shift this to a Java stream-based implementation, providing a more efficient and streamlined approach.  
@@ -51,12 +49,13 @@ Despite their readability and declarative nature, Ballerina query expressions ex
 To mitigate these performance drawbacks, we transition to a Java Streams-based execution model. This approach processes Ballerina collections using Java's Stream API without relying on Ballerina objects and optimizing query execution.
 
 ## 5. Streams API
+![unnamed](https://github.com/user-attachments/assets/e5ee1c57-5b81-46e4-a37d-bbae34d3f73d)
 
 - **Creating Streams**: Streams can be created from various sources such as collections, arrays, or even directly from values.
 - **Intermediate Operations**: Intermediate operations transform the elements of a stream. Common operations include `filter`, `map`, and `sorted`.
 - **Terminal Operations**: Terminal operations produce a result or a side effect, such as `forEach`, `collect`, or `count`.
 
-> Java Streams: Unlocking Functional Data Processing Power
+> [Java Streams: Unlocking Functional Data Processing Power](https://jignect.tech/java-streams-unleashing-the-power-of-functional-data-processing/)
 
 ```java
 empCountStartWithS = employeesList.stream()
@@ -66,8 +65,10 @@ empCountStartWithS = employeesList.stream()
 ```
 
 ## 6. Architecture
+![unnamed (2)](https://github.com/user-attachments/assets/b5a21ca9-3bf0-4f9a-86cd-4c85ccdd6749)
 
-- **Complete Architecture Doc**: [Architecture][Intern Project][Ballerina] Optimizing Ballerina Query Expressions
+
+- **Complete Architecture Doc**: [[Architecture][Intern Project][Ballerina] Optimizing Ballerina Query Expressions](https://docs.google.com/document/d/11tKKB6WgL3EZMonl-APBKNgoOb5EyVfvVX6EhZ5ie3o/edit?usp=sharing)
 
 ### 6.1 Previous Ballerina Implementation
 
