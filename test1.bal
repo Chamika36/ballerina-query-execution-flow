@@ -5,7 +5,7 @@ public function main() {
  
     int[] numsTimes10 = from var i in nums
                         where i > 2
-                        limit 2
+                        limit 4
                         order by i descending
                         select i * 10;
 
