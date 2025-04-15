@@ -77,8 +77,7 @@ empCountStartWithS = employeesList.stream()
 
 ### 6.2 New Java Streams Implementation
 
-- The ballerina classes defined in the `types.bal`, will be replaced by the new java streams implementation.
-- The helper functions in the `helpers.bal` will call the Java Streams classes defined in the runtime via FFI.
+The ballerina classes defined in the `types.bal`, will be replaced by the new java streams implementation. The helper functions in the `helpers.bal` will call the Java Streams classes defined in the runtime via FFI.
 - **Query Desugar**: Continues to generate lambda functions.
 - **Helpers.bal**: Invokes Java methods via FFI instead of creating Ballerina objects.
 - **Java Stream Classes**: Implements key classes (e.g., `StreamPipeline`, `Frame`, `Clauses`) for optimized query execution.
@@ -126,6 +125,7 @@ public void execute() throws Exception {
 ```
 
 **Extracting the processed stream**  
+
 After processing all stages, the stream needs to be collected into a Ballerina-compatible format. The `BallerinaCollectionUtils` utility handles this by converting the stream into arrays, maps, or XML, depending on the required output type: `toXML()`, `toArray`, `toMap`, `toTable`.
 
 ---
@@ -158,7 +158,7 @@ public class ...Clause implements PipelineStage {
 
 ---
 
-### Clause Mapping
+## Clause Mapping
 
 | Ballerina Clause | Java Streams Operation              | Description                              |
 |------------------|-------------------------------------|------------------------------------------|
