@@ -72,7 +72,7 @@ empCountStartWithS = employeesList.stream()
 
 ### 6.1 Previous Ballerina Implementation
 
-- `QueryDesugar` -> `Helpers.bal` -> `Types.bal`
+- [QueryDesugar](https://github.com/ballerina-platform/ballerina-lang/blob/2201.10.x/compiler/ballerina-lang/src/main/java/org/wso2/ballerinalang/compiler/desugar/QueryDesugar.java) -> [Helpers.bal](https://github.com/ballerina-platform/ballerina-lang/blob/2201.10.x/langlib/lang.query/src/main/ballerina/helpers.bal) -> [Types.bal](https://github.com/ballerina-platform/ballerina-lang/blob/2201.10.x/langlib/lang.query/src/main/ballerina/types.bal)
 - Example: https://docs.google.com/document/d/11tKKB6WgL3EZMonl-APBKNgoOb5EyVfvVX6EhZ5ie3o/edit?tab=t.0#bookmark=id.njqhqhl72vzt
 
 ### 6.2 New Java Streams Implementation
