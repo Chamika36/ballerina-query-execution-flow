@@ -79,7 +79,7 @@ empCountStartWithS = employeesList.stream()
 
 The ballerina classes defined in the `types.bal`, will be replaced by the new java streams implementation. The helper functions in the `helpers.bal` will call the Java Streams classes defined in the runtime via FFI.
 - **Query Desugar**: Continues to generate lambda functions.
-- **Helpers.bal**: Invokes Java methods via FFI instead of creating Ballerina objects.
+- **[Helpers.bal](https://github.com/ballerina-platform/ballerina-lang/blob/java-based-query-runtime/langlib/lang.query/src/main/ballerina/helpers.bal)**: Invokes Java methods via FFI instead of creating Ballerina objects.
 - **Java Stream Classes**: Implements key classes (e.g., `StreamPipeline`, `Frame`, `Clauses`) for optimized query execution.
 
 ## 7. Main Classes
