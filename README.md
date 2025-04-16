@@ -84,7 +84,7 @@ The ballerina classes defined in the `types.bal`, will be replaced by the new ja
 
 ## 7. Main Classes
 
-### StreamPipeline Class
+### 7.1 StreamPipeline Class
 
 **Attributes**:
 
@@ -130,7 +130,7 @@ After processing all stages, the stream needs to be collected into a Ballerina-c
 
 ---
 
-### Frame Class
+### 7.2 Frame Class
 
 Represents a frame that wraps elements as Ballerina record
 
@@ -140,7 +140,7 @@ private BMap<BString, Object> frame;
 
 ---
 
-### Query Clauses
+### 7.3 Query Clauses
 
 ```java
 public class ...Clause implements PipelineStage {
@@ -158,7 +158,7 @@ public class ...Clause implements PipelineStage {
 
 ---
 
-## Clause Mapping
+#### Clause Mapping
 
 | Ballerina Clause | Java Streams Operation              | Description                              |
 |------------------|-------------------------------------|------------------------------------------|
@@ -175,7 +175,7 @@ public class ...Clause implements PipelineStage {
 
 ---
 
-### BallerinaIteratorUtils
+### 7.4 BallerinaIteratorUtils
 
 This wraps the ballerina iterator extracted from the BCollection in a Java iterator. Then it enables the BCollection to be used as a Java stream.
 
@@ -197,7 +197,7 @@ private static <T> Iterator<T> createJavaIterator(BIterator<?> ballerinaIterator
 
 ---
 
-### BallerinaCollectionUtils
+### 7.5 BallerinaCollectionUtils
 
 These are responsible for collecting the processed stream to the required ballerina collection type. This consists methods such as `createArray`, `createTable`, `createMap`. In those methods it uses a terminal operation to execute and collect the stream.
 
